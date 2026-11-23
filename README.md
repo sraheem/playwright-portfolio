@@ -2,8 +2,7 @@
 
 End-to-end UI and API test automation in **Playwright + TypeScript**, run in **GitHub Actions**, with a Claude-powered failure-triage agent and MCP server (in progress — see [PLAN.md](PLAN.md)).
 
-<!-- Badge: replace OWNER/REPO after the first push -->
-<!-- ![Playwright tests](https://github.com/OWNER/REPO/actions/workflows/playwright.yml/badge.svg) -->
+[![Playwright tests](https://github.com/sraheem/playwright-portfolio/actions/workflows/playwright.yml/badge.svg)](https://github.com/sraheem/playwright-portfolio/actions/workflows/playwright.yml)
 
 ## What's covered
 
