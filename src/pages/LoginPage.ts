@@ -1,0 +1,30 @@
+import { type Locator, type Page, expect } from '@playwright/test';
+import { PASSWORD } from '../data/users';
+
+export class LoginPage {
+  readonly username: Locator;
+  readonly password: Locator;
+  readonly submit: Locator;
+  readonly error: Locator;
+
+  constructor(private readonly page: Page) {
+    this.username = page.getByTestId('username');
+    this.password = page.getByTestId('password');
+    this.submit = page.getByTestId('login-button');
+    this.error = page.getByTestId('error');
+  }
+
+  async goto() {
+    await this.page.goto('/');
+  }
+
+  async login(user: string, password = PASSWORD) {
+    await this.username.fill(user);
+    await this.password.fill(password);
+    await this.submit.click();
+  }
+
+  async expectError(text: string | RegExp) {
+    await expect(this.error).toContainText(text);
+  }
+}
