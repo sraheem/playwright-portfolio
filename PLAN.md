@@ -38,7 +38,7 @@ Kickoff Mon Nov 23, 2026 · target finish Fri Dec 18, 2026 (4 weeks, ~8–10 hrs
 - [x] API tests: typed `BookingClient`, create/read, full CRUD with auth, negative auth cases
 - [x] GitHub Actions workflow (matrix per project, nightly schedule, report/trace artifacts)
 - [x] Create public GitHub repo and push
-- [ ] Confirm first green CI run
+- [x] Confirm first green CI run (Nov 23)
 - [x] Add README status badge
 
 ### Week 2 (Nov 30–Dec 6): Depth and polish
